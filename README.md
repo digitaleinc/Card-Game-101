@@ -23,6 +23,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 ( if there is a problem - just install: pip install pyqt5 )
+
 5. You can start the script:
 ```
 python main.py
