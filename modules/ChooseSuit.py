@@ -28,10 +28,10 @@ class ChooseSuit(QWidget):
         self.initForm()
 
     def initForm(self):
-        pixmap1 = QPixmap(f"images/Q_of_clubs.png")
-        pixmap2 = QPixmap(f"images/Q_of_diamonds.png")
-        pixmap3 = QPixmap(f"images/Q_of_spades.png")
-        pixmap4 = QPixmap(f"images/Q_of_hearts.png")
+        pixmap1 = QPixmap(f"../images/Q_of_clubs.png")
+        pixmap2 = QPixmap(f"../images/Q_of_diamonds.png")
+        pixmap3 = QPixmap(f"../images/Q_of_spades.png")
+        pixmap4 = QPixmap(f"../images/Q_of_hearts.png")
         self.clubs.setPixmap(pixmap1)
         self.diamonds.setPixmap(pixmap2)
         self.spades.setPixmap(pixmap3)

@@ -1,8 +1,8 @@
-from Gameisover import *
-from Deck import *
-from Player import *
-from ChooseCard import *
-from ChooseSuit import *
+from modules.Gameisover import *
+from modules.Deck import *
+from modules.Player import *
+from modules.ChooseCard import *
+from modules.ChooseSuit import *
 import threading
 import time
 from functions import *
@@ -154,7 +154,7 @@ class UI(QMainWindow):
         pixmap = QPixmap(f"images/{card[0]}_of_{card[1]}.png")
         self.deck_card.setPixmap(pixmap)
 
-        empty = QPixmap(f"images/empty.png")
+        empty = QPixmap(f"../images/empty.png")
         self.change_labels()
         try:
             deck_card_2 = self.trick_pile[-2]
@@ -164,7 +164,7 @@ class UI(QMainWindow):
             pass
 
         if self.deck.get_deck_size() == 0:
-            deck_pix = QPixmap(f"images/empty.png")
+            deck_pix = QPixmap(f"../images/empty.png")
             self.deck_card_turned.setPixmap(deck_pix)
         else:
             deck_pix2 = QPixmap(f"{turned}")
@@ -227,7 +227,7 @@ class UI(QMainWindow):
         self.update_design()
 
     def func(self):
-        empty = QPixmap("images/empty.png")
+        empty = QPixmap("../images/empty.png")
 
         player_hand = self.players[0].hand
 
@@ -274,7 +274,7 @@ class UI(QMainWindow):
         self.deck_card.setPixmap(pixmap)
 
         if self.deck.get_deck_size() == 0:
-            pixmap = QPixmap(f"images/empty.png")
+            pixmap = QPixmap(f"../images/empty.png")
             self.deck_card_turned.setPixmap(pixmap)
         else:
             pixmap = QPixmap(f"{turned}")

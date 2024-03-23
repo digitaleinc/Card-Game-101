@@ -1,4 +1,4 @@
-from UI import *
+from modules.UI import *
 from PyQt5.QtWidgets import QApplication
 
 
