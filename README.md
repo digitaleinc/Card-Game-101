@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 ( if there is a problem - just install: pip install pyqt5 )
 
-5. You can start the script:
+5. Start the script in venv:
 ```
 python main.py
 ```
