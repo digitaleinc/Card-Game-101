@@ -10,6 +10,7 @@ Game was made using Python + PyQt5
 python -m venv venv
 ```
 3. Activate venv:
+
 Windows:
 ```
 venv\Scripts\activate.bat
